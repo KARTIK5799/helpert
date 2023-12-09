@@ -12,7 +12,7 @@ function App() {
   };
 
   return (
-    <div className="app-container">
+    <>
       {!isCardVisible && (
         <Button
           text="Click me"
@@ -22,7 +22,7 @@ function App() {
       )}
 
       {isCardVisible && <Card onCancel={handleCancelButtonClick} />}
-    </div>
+    </>
   );
 }
 
